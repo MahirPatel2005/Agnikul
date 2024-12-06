@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import ImageReveal from './components/ImageReveal';
+import FactsFigures from './components/FactsFigures';
+import LaunchContainer from './components/LaunchContainer';
 import './App.css';
 
 function App() {
@@ -13,6 +15,8 @@ function App() {
                 <Navbar />
                 <HeroSection />
                 <ImageReveal />
+                <FactsFigures />
+                <LaunchContainer />
                 <footer>
                     {/* Footer Content */}
                 </footer>

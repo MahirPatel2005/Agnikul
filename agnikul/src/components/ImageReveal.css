@@ -1,38 +1,47 @@
 .image-reveal-container {
+    padding-top: 200px;
     display: flex;
     background-color: white;
     align-items: center;
     position: relative;
     overflow: hidden; /* Hide overflow */
     width: 100%; /* Full width */
-    height: 800px; /* Adjust height as needed */
+    height: 320px; /* Adjust height as needed */
 }
 
 .image-description {
-    color: black;
-    padding: 20px;
+    margin-left: 80px;
+    color: rgb(100, 79, 79);
+    /* padding: 20px; */
     max-width: 50%; /* Ensure text takes up half the area */
     z-index: 1; /* Ensure text is above the image */
     position: relative; /* Positioning context */
     flex: 1; /* Allow text to take remaining space */
 }
 
+.image-description h2 {
+    color: darkgreen; /* Change the color to dark green */
+}
+
 .image-reveal {
-    position: relative;
-    width: 20%; /* Show one-fifth of the image */
-    height: 100%;
+    position: absolute; /* Position the image absolutely */
+    right: 0; /* Align to the rightmost corner */
+    width: 30%; /* Show 30% of the image initially */
+    height: 100%; /* Ensure the height is full */
     overflow: hidden; /* Hide overflow */
 }
 
 .image-reveal img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.5s ease; /* Smooth transition */
-    transform: translateY(80%); /* Initially show one-fifth of the image */
+    width: 50%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 2s ease; /* Smooth transition */
+    transform: translateY(0); /* Start with no vertical translation */
 }
 
+
+
 .image-reveal:hover img {
-    transform: translateY(0); /* Show full image on hover */
+    transform: translateY(-70%); /* Move the image upwards */
 }
 
 .more-info-button {

@@ -4,9 +4,6 @@ import './ImageReveal.css';
 const ImageReveal = () => {
     return (
         <div className="image-reveal-container">
-            <div className="image-reveal">
-                <img src="https://www.agnikul.in/static/media/home-agni.cc387bed4312c9ebd8ce.jpg" alt="Agnibaan" /> {/* Replace with your image URL */}
-            </div>
             <div className="image-description">
                 <h2>Agnibaan is a highly customizable, 2 stage launch vehicle.</h2>
                 <p>
@@ -17,6 +14,9 @@ const ImageReveal = () => {
                 </p>
                 <p>How is this possible? What about controllability? Assembly?</p>
                 <a href="/more-info" className="more-info-button">Tell me more</a>
+            </div>
+            <div className="image-reveal">
+                <img src="https://www.agnikul.in/static/media/home-agni.cc387bed4312c9ebd8ce.jpg" alt="Agnibaan" /> {/* Replace with your image URL */}
             </div>
         </div>
     );

@@ -1,0 +1,97 @@
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    background-size: cover;
+    background-position: center;
+    color: white; /* Default text color */
+    text-align: center;
+    padding: 20px;
+    position: relative; /* Ensure positioning context */
+    overflow: hidden; /* Prevent overflow */
+    transition: background-image 1s ease-in-out; /* Smooth transition for background image */
+}
+
+.hero-content {
+    position: relative; /* Positioning for content */
+    z-index: 1; /* Ensure content is above background */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add text shadow for better contrast */
+    transition: opacity 1s ease-in-out; /* Smooth transition for text opacity */
+}
+
+.hero-content h1 {
+    font-size: 48px; /* Adjust size as needed */
+    font-weight: bold;
+}
+
+.hero-content h2 {
+    font-size: 36px; /* Adjust size as needed */
+    color: #ffcc00; /* Change to a gold color for better contrast */
+}
+
+.hero-content p {
+    font-size: 18px; /* Adjust size as needed */
+    margin: 20px 0;
+}
+
+.hero-button {
+    padding: 10px 20px;
+    background-color: green; /* Button color */
+    color: white; /* Button text color */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: lighter;
+    transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+    background-color: darkgreen; /* Darker shade on hover */
+}
+
+/* Slide animation */
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out; /* Smooth transition for transform and opacity */
+    opacity: 0; /* Start with opacity 0 */
+}
+
+.slide-in {
+    transform: translateX(0); /* Slide in */
+    opacity: 1; /* Fade in */
+}
+
+.slide-out {
+    transform: translateX(-100%); /* Slide out to the left */
+    opacity: 0; /* Fade out */
+}
+
+/* Button styles */
+.slide-buttons {
+    position: absolute;
+    bottom: 20px; /* Position buttons at the bottom */
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between buttons */
+    z-index: 2; /* Ensure buttons are above background */
+}
+
+.slide-button {
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px; /* Adjust size as needed */
+    transition: background-color 0.3s;
+}
+
+.slide-button:hover {
+    background-color: rgba(255, 255, 255, 1); /* Fully opaque on hover */
+}

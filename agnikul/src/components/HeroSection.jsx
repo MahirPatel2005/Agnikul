@@ -16,9 +16,9 @@ const slides = [
     },
     {
         image: 'https://globalindian.com/wp-content/uploads/2021/06/agnikul.jpg',
-        title: 'Affordable Launches',
-        subtitle: "Your Gateway to Space",
-        description: 'Making space journeys simple, quick, and affordable.',
+        title: 'Bringing Space Within',
+        subtitle: "Everyone's Reach",
+        description: 'Going to space shouldn’t be the hardest part of utilizing, living in or working from space.',
     },
     {
         image: 'https://www.globalindian.com/wp-content/uploads/2021/06/agnikul1.png',
